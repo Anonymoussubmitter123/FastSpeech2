@@ -1,0 +1,19 @@
+CUDA_VISIBLE_DEVICES=3 python3 train.py -p config/pretrain/AISHELL3/preprocess.yaml -m config/pretrain/model.yaml -t config/pretrain/train.yaml --vocoder_checkpoint vocoder/generator_universal.pth.tar --vocoder_config vocoder/config/config_v1.json
+
+
+
+python synthesize.py --text "你会把我弄出去的吧。" --speaker_id 98 --restore_step 600000 --mode single -p config/AISHELL3/preprocess.yaml -m config/AISHELL3/model.yaml -t config/AISHELL3/train.yaml
+
+
+python synthesize.py --text "Brewer said, quote. He just looked funny to me. His hair was sort of messed up and looked like he had been running, and he looked scared, and he looked
+ funny, end quote." --restore_step 900000 --mode single -p config/LJSpeech/preprocess.yaml -m config/LJSpeech/model.yaml -t config/LJSpeech/train.yaml
+trees and overhanging vines were planted, and thus the travelers' tales arose.
+python synthesize.py --text "Brewer said,quote,he just looked funny to me. His hair was sort of messed up and looked like he had been running, and he looked scared, and he looked funny, end quote." --restore_step 900000 --mode single -p config/LJSpeech/preprocess.yaml -m config/LJSpeech/model.yaml -t config/LJSpeech/train.yaml
+
+
+
+multiple:
+普通话：
+python synthesize.py --source sentences-ai.txt --restore_step 50000 --mode multiple -p config/AISHELL3/preprocess.yaml -m config/AISHELL3/model.yaml -t config/AISHELL3/train.yaml
+英语：
+python synthesize.py --source sentences-lj.txt --restore_step 10000 --mode multiple -p config/LJSpeech/preprocess.yaml -m config/LJSpeech/model.yaml -t config/LJSpeech/train.yaml

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>FastSpeech 2 Audio Samples</title>
+  <style>
+    body {
+      margin: 0% 15%;
+      padding: 50px 30px;
+      background: #fff;
+      color: #111;
+      font-size: 17px;
+      font-family: sans-serif;
+      font-weight: 400;
+      line-height: 1.8;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1 {
+      font-size: 1.75em;
+    }
+
+    h2 {
+      margin-bottom: 0.4em;
+    }
+
+    hr {
+      height: 0.5px;
+      border-width: 0;
+      color: lightgray;
+      background-color: lightgray
+    }
+
+    table {
+      width: 100%;
+    }
+
+    audio {
+      width: 100%;
+    }
+  </style>
+</head>
+
+<body>
+
+  <hr>
+
+  <p>
+  <h2>普通话多说话人TTS</h2>
+  <div>
+    <b>数据集</b>: <a href="http://www.aishelltech.com/aishell_3">AISHELL-3</a>
+  </div>
+  <div>
+    <b>声码器</b>: <a href="https://github.com/jik876/hifi-gan">HiFi-GAN (universal)</a>
+  </div>
+
+  <hr>
+
+  <table>
+    <tr>
+      <th style="text-align: center">SSB08630110 (Ground-Truth) </th>
+      <th style="text-align: center">SSB08630110 (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./demo/AISHELL3/SSB08630110_ground-truth.wav" autoplay />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./output/result/AISHELL3/放首歌来听，叮当的歌.wav" autoplay />
+        </audio></td>
+    </tr>
+  </table>
+  <div><b>Speaker</b>: <em>SSB0863</em></div>
+  <div><b>Text</b>: <em>放首歌来听，丁当的歌 (fang4 shou3 ge1 lai2 ting1 sp ding1 dang1 de5 ge1)</em></div>
+
+  <hr>
+
+  <table>
+    <tr>
+      <th style="text-align: center">SSB07940279 (Ground-Truth) </th>
+      <th style="text-align: center">SSB07940279 (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./demo/AISHELL3/SSB07940279_ground-truth.wav" autoplay />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./output/result/AISHELL3/中国，今日有望创下历史单，日，出行人次最高.wav" autoplay />
+        </audio></td>
+    </tr>
+  </table>
+  <div><b>Speaker</b>: <em>SSB0794</em></div>
+  <div><b>Text</b>: <em>中国，今日有望创下历史单，日，出行人次最高 (zhong1 guo2 sp jin1 ri4 you3 wang4 chuang4 xia4 li4 shi3 dan1 sp ri4 sp
+      chu1 xing2 ren2 ci4 zui4 gao1)</em></div>
+
+  <hr>
+
+  <table>
+    <tr>
+      <th style="text-align: center">SSB00800003 (Ground-Truth) </th>
+      <th style="text-align: center">SSB00800003 (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./demo/AISHELL3/SSB00800003_ground-truth.wav" autoplay />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./output/result/AISHELL3/中新网七月十四日电.wav" autoplay />
+        </audio></td>
+    </tr>
+  </table>
+  <div><b>Speaker</b>: <em>SSB0080</em></div>
+  <div><b>Text</b>: <em>中新网七月十四日电 (zhong1 xin1 wang3 qi1 yue4 shi2 si4 ri4 dian4)</em></div>
+
+  <hr>
+
+  <table>
+    <tr>
+      <th style="text-align: center">SSB15930399 (Ground-Truth) </th>
+      <th style="text-align: center">SSB15930399 (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./demo/AISHELL3/SSB15930399_ground-truth.wav" autoplay />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./output/result/AISHELL3/也就是说汤米踩过点.wav" autoplay />
+        </audio></td>
+    </tr>
+  </table>
+  <div><b>Speaker</b>: <em>SSB1593</em></div>
+  <div><b>Text</b>: <em>也就是说汤米踩过点 (ye3 jiu4 shi4 shuo1 tang1 mi3 cai3 guo4 dian3)</em></div>
+
+  <hr>
+
+  <table>
+    <tr>
+      <th style="text-align: center">SSB16070080 (Ground-Truth) </th>
+      <th style="text-align: center">SSB16070080 (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./demo/AISHELL3/SSB16070080_ground-truth.wav" autoplay />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./output/result/AISHELL3/但阵营之间差距拉大.wav" autoplay />
+        </audio></td>
+    </tr>
+  </table>
+  <div><b>Speaker</b>: <em>SSB1607</em></div>
+  <div><b>Text</b>: <em>但阵营之间差距拉大 (dan4 zhen4 ying2 zhi1 jian1 cha1 ju4 la1 da4)</em></div>
+
+  <hr>
+
+  <table>
+    <tr>
+      <th style="text-align: center">SSB10200388 (Ground-Truth) </th>
+      <th style="text-align: center">SSB10200388 (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./demo/AISHELL3/SSB10200388_ground-truth.wav" autoplay />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./output/result/AISHELL3/我抱着一大堆纸箱回了家.wav" autoplay />
+        </audio></td>
+    </tr>
+  </table>
+  <div><b>Speaker</b>: <em>SSSB1020</em></div>
+  <div><b>Text</b>: <em>我抱着一大堆纸箱回了家 (wo3 bao4 zhe5 yi2 da4 dui1 zhi3 xiang1 hui2 le5 jia1)</em></div>
+
+  <hr>
+
+  <table>
+    <tr>
+      <th style="text-align: center">SSB05900363 (Ground-Truth) </th>
+      <th style="text-align: center">SSB05900363 (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./demo/AISHELL3/SSB05900363_ground-truth.wav" autoplay />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./output/result/AISHELL3/我们不能分头行动.wav" autoplay />
+        </audio></td>
+    </tr>
+  </table>
+  <div><b>Speaker</b>: <em>SSB0590</em></div>
+  <div><b>Text</b>: <em>我们不能分头行动 (wo3 men2 bu4 neng2 fen1 tou2 xing2 dong4)</em></div>
+
+  <hr>
+
+  <table>
+    <tr>
+      <th style="text-align: center">SSB04700028 (Ground-Truth) </th>
+      <th style="text-align: center">SSB04700028 (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./demo/AISHELL3/SSB04700028_ground-truth.wav" autoplay />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./output/result/AISHELL3/毕节市的景点有什么.wav" autoplay />
+        </audio></td>
+    </tr>
+  </table>
+  <div><b>Speaker</b>: <em>SSB0470</em></div>
+  <div><b>Text</b>: <em>毕节市的景点有什么 (bi4 jie2 shi4 de5 jing2 dian2 you3 shen2 me5)</em></div>
+
+  <hr>
+
+  <table>
+    <tr>
+      <th style="text-align: center">SSB06290079 (Ground-Truth) </th>
+      <th style="text-align: center">SSB06290079 (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./demo/AISHELL3/SSB06290079_ground-truth.wav" autoplay />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./output/result/AISHELL3/你以为.wav" autoplay />
+        </audio></td>
+    </tr>
+  </table>
+  <div><b>Speaker</b>: <em>SSB0629</em></div>
+  <div><b>Text</b>: <em>你以为 (ni2 yi3 wei2)</em></div>
+
+  <hr>
+
+  <table>
+    <tr>
+      <th style="text-align: center">SSB08220199 (Ground-Truth) </th>
+      <th style="text-align: center">SSB08220199 (Synthesized) </th>
+    </tr>
+    <tr>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./demo/AISHELL3/SSB08220199_ground-truth.wav" autoplay />
+        </audio></td>
+      <td style="text-align: center"><audio controls="controls">
+          <source src="./output/result/AISHELL3/该职位员工可以，居住在西雅，图或，洛，杉矶.wav" autoplay />
+        </audio></td>
+    </tr>
+  </table>
+  <div><b>Speaker</b>: <em>SSB0822</em></div>
+  <div><b>Text</b>: <em>该职位员工可以，居住在西雅，图或，洛，杉矶 (gai1 zhi2 wei4 yuan2 gong1 ke2 yi3 sp ju1 zhu4 zai4 xi1 ya3 sp tu2 huo4
+      sp luo4 sp shan3 ji1)</em></div>
+
+  </p>
+
+  <hr>
+
+</body>
+
+</html>
